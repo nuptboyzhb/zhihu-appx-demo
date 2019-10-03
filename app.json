@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/pages/list/index",
+    "pages/pages/detail/detail"
+  ],
+  "window": {
+    "defaultTitle": "上拉刷新"
+  }
+}

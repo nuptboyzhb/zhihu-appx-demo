@@ -1,0 +1,6 @@
+
+<import-sjs name="m1" from="../common/utils.sjs"/>
+
+<view style="background-color: #e0e0e0;">
+  <text class="tst-text">{{m1.getTitle(title) +'  '+ m1.lineContent }}</text>
+</view>

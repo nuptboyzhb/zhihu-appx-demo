@@ -1,0 +1,12 @@
+<view class="bg-container" onTap="handlerJump">
+    <view class="tsi-container">
+        <image class="tsi-image" 
+               style="height:{{headMargin}}rpx;"
+               mode="scaleToFill"
+               src="{{image}}"
+              lazy-load={{true}} 
+              onError=onImgLoadError
+              onLoad=onImageLoad></image>
+        <text class="tsi-text">{{title}}</text>
+    </view>
+</view>

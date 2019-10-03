@@ -1,0 +1,22 @@
+<view class="schedule-container">
+    <view class="suspend-title">
+        <text onTap="onNextPage" class="btn">下一页</text>
+        <text onTap="onScrollToTop" class="btn">回到顶部</text>
+    </view>
+    <scroll-view scroll-y="{{true}}" onScrollToLower="scrollMytrip" class="schedule-scroll" scroll-into-view="{{toViewId}}" scroll-top="{{scrollTop}}" enable-back-to-top="{{true}}">
+        <block a:for="{{list}}" a:for-index="idx" a:for-item="item">
+            <view a:if="{{item.type == 1}}" class="sticky-title">
+                <story-title title="{{item.title}}" id="{{idx}}"></story-title>
+            </view>
+            <story-item a:if="{{item.type == 0}}" title="{{item.title}}" image="{{item.images[0]}} " id="{{item.id}}" seq="{{idx}}" onStroryClick="onStroryClick">
+            </story-item>
+            <view id="{{idx}}"></view>
+        </block>
+        <view class="spinner" style="{{show ? '' : 'display:none'}}">
+            <view class="bounce1 bounce"></view>
+            <view class="bounce2 bounce"></view>
+            <view class="bounce3 bounce"></view>
+            <view style="margin:20rpx 0 0 20rpx;color:#666666;">加载中...</view>
+        </view>
+    </scroll-view>
+</view>

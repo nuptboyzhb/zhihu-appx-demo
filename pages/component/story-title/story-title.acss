@@ -1,0 +1,14 @@
+.tst-text {
+  display: flex;
+  position: relative;
+  flex: 1;
+  font-size: 30rpx;
+  margin-left: 15rpx;
+  background-color: #ffffff;
+  margin-right: 15rpx;
+  padding-left: 15rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  border-radius: 8rpx;
+  color: #333333;
+}

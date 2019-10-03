@@ -1,0 +1,4 @@
+<view class="detail-container">
+    <story-detail-all detail={{detail}} show={{"3"}}></story-detail-all>
+    <text a:if={{!detail}}>加载中</text>
+</view>

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "故事详情",
+  "usingComponents": {
+    "story-detail-all": "/pages/component/story-detail-all/story-detail-all"
+  }
+}

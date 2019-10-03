@@ -1,0 +1,53 @@
+/*
+  只支持以下几种语法，不支持伪类、属性选择器：
+  .class {}
+  #id {}
+  tag {}
+  .xx, .xx {}
+*/
+
+.bg-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width:750rpx;
+  height:240rpx;
+  background-color: #e0e0e0;
+}
+
+.tsi-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 720rpx;
+  height: 220rpx;
+  align-items: center;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 5rpx;
+  background-color: #ffffff;
+}
+
+.tsi-text {
+  display: flex;
+  position: relative;
+  flex: 1;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 10rpx;
+  color: #333333;
+}
+
+.tsi-image {
+  display: flex;
+  position: relative;
+  width: 180rpx;
+  height: 160rpx;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  border-color: #ff3333;
+  border-width: 5rpx;
+}

@@ -1,0 +1,24 @@
+<view>
+    <!--<rich-text nodes="{{content}}" onTap="tap">{{content}}</rich-text> -->
+    <scroll-view>
+        <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" vertical="{{false}}" interval="{{3000}}" circular="{{true}}">
+            <block a:for="{{imgList}}">
+                <swiper-item key="swiper-item-{{index}}">
+                    <view onTap="onSmallImageTap" id="{{item}}">
+                        <image mode="aspectFill" src="{{item}}" class="img" />
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view style="width:100%;height:100rpx;"></view>
+        <block a:for="{{list}}">
+            <text class="text">{{item}}</text>
+            <view style="height:20rpx;witdh:100%;"></view>
+        </block>>
+    </scroll-view>>
+    <view onTap="onBigImageTap" a:if="{{bigImg}}" class="big-container">
+        <view class="big-img">
+            <image src="{{bigImg}}" mode="aspectFit"></image>
+        </view>
+    </view>
+</view>

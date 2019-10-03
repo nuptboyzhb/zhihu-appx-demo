@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "知乎日报",
+  "usingComponents": {
+    "story-item": "/pages/component/story-item/story-item",
+    "story-title":"/pages/component/story-title/story-title"
+  }
+}
