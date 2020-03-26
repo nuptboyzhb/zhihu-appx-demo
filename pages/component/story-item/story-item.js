@@ -12,7 +12,7 @@ Component({
     detail:{}
   },
   data: {
-    defaultImg: 'https://img.alicdn.com/tfs/TB1UAiGRFXXXXaNXXXXXXXXXXXX-300-300.gif',
+    defaultImg: 'https://dingyue.ws.126.net/2020/0325/ea53da73g00q7q7g501u0c0005k009wm.gif',
     headerMargin : 160,
   },
   onInit() {

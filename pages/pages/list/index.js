@@ -1,6 +1,8 @@
+import {getApp} from '../../common/utils'
 // mock列表总数
 const mockTotal = 600;
 var storyItem;
+let app = getApp();
 Page({
     data: {
         scrollTop: 0,
@@ -11,6 +13,7 @@ Page({
     },
     onLoad() {
         this.mySchedulde();
+        console.log('### app = '+JSON.stringify(app));
     },
 
     onNextPage() {

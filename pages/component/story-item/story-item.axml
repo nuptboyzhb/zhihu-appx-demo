@@ -2,7 +2,7 @@
     <view class="tsi-container">
         <image class="tsi-image" 
                style="height:{{headMargin}}rpx;"
-               mode="scaleToFill"
+               mode="aspectFill"
                src="{{image}}"
               lazy-load={{true}} 
               onError=onImgLoadError
